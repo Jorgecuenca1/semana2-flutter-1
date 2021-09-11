@@ -44,434 +44,19 @@ class _HomePageState extends State<HomePage> {
                   child: Column(
                     children: [
                       Row(
-                        children: <Widget>[
-                          Container(
-                            margin: EdgeInsets.all(7),
-
-                          ),
-                          new SizedBox(
-                            width: 58.0,
-                            height: 30.0,
-                            child: FlatButton(
-                              child: Text(
-                                '7',
-                                style: TextStyle(fontSize: 10.0),
-                              ),
-                              color: Colors.cyan,
-                              textColor: Colors.black,
-                              onPressed: () {},
-                            ),
-                          ),
-                          Container(
-                            margin: EdgeInsets.all(1),
-
-                          ),
-                          new SizedBox(
-                            width: 58.0,
-                            height: 30.0,
-                            child: FlatButton(
-                              child: Text(
-                                '8',
-                                style: TextStyle(fontSize: 10.0),
-                              ),
-                              color: Colors.cyan,
-                              textColor: Colors.black,
-                              onPressed: () {},
-                            ),
-                          ),
-                          Container(
-                            margin: EdgeInsets.all(1),
-
-                          ),
-                          new SizedBox(
-                            width: 58.0,
-                            height: 30.0,
-                            child: FlatButton(
-                              child: Text(
-                                '9',
-                                style: TextStyle(fontSize: 10.0),
-                              ),
-                              color: Colors.cyan,
-                              textColor: Colors.black,
-                              onPressed: () {},
-                            ),
-                          ),
-                          Container(
-                            margin: EdgeInsets.all(1),
-
-                          ),
-                          new SizedBox(
-                            width: 58.0,
-                            height: 30.0,
-                            child: FlatButton(
-                              child: Text(
-                                'ª',
-                                style: TextStyle(fontSize: 10.0),
-                              ),
-                              color: Colors.cyan,
-                              textColor: Colors.black,
-                              onPressed: () {},
-                            ),
-                          ),
-                          Container(
-                            margin: EdgeInsets.all(1),
-
-                          ),
-                          new SizedBox(
-                            width: 58.0,
-                            height: 30.0,
-                            child: FlatButton(
-                              child: Text(
-                                'c',
-                                style: TextStyle(fontSize: 10.0),
-                              ),
-                              color: Colors.cyan,
-                              textColor: Colors.black,
-                              onPressed: () {},
-                            ),
-                          ),
-                          Container(
-                            margin: EdgeInsets.all(1),
-
-                          ),
-                          new SizedBox(
-                            width: 58.0,
-                            height: 30.0,
-                            child: FlatButton(
-                              child: Text(
-                                'C',
-                                style: TextStyle(fontSize: 10.0),
-                              ),
-                              color: Colors.cyan,
-                              textColor: Colors.black,
-                              onPressed: () {},
-                            ),
-                          ),
-                          Container(
-                            margin: EdgeInsets.all(1),
-
-                          ),
+                        children: _listaBotonesFila1(),
 
 
 
-                        ],
                       ),
                       Row(
-                        children: [
-                          Container(
-                            margin: EdgeInsets.all(7),
-
-                          ),
-                          new SizedBox(
-                            width: 58.0,
-                            height: 30.0,
-                            child: FlatButton(
-                              child: Text(
-                                '4',
-                                style: TextStyle(fontSize: 10.0),
-                              ),
-                              color: Colors.cyan,
-                              textColor: Colors.black,
-                              onPressed: () {},
-                            ),
-                          ),
-                          Container(
-                            margin: EdgeInsets.all(1),
-
-                          ),
-                          new SizedBox(
-                            width: 58.0,
-                            height: 30.0,
-                            child: FlatButton(
-                              child: Text(
-                                '5',
-                                style: TextStyle(fontSize: 10.0),
-                              ),
-                              color: Colors.cyan,
-                              textColor: Colors.black,
-                              onPressed: () {},
-                            ),
-                          ),
-                          Container(
-                            margin: EdgeInsets.all(1),
-
-                          ),
-                          new SizedBox(
-                            width: 58.0,
-                            height: 30.0,
-                            child: FlatButton(
-                              child: Text(
-                                '6',
-                                style: TextStyle(fontSize: 10.0),
-                              ),
-                              color: Colors.cyan,
-                              textColor: Colors.black,
-                              onPressed: () {},
-                            ),
-                          ),
-                          Container(
-                            margin: EdgeInsets.all(1),
-
-                          ),
-                          new SizedBox(
-                            width: 58.0,
-                            height: 30.0,
-                            child: FlatButton(
-                              child: Text(
-                                '.',
-                                style: TextStyle(fontSize: 10.0),
-                              ),
-                              color: Colors.cyan,
-                              textColor: Colors.black,
-                              onPressed: () {},
-                            ),
-                          ),
-                          Container(
-                            margin: EdgeInsets.all(1),
-
-                          ),
-                          new SizedBox(
-                            width: 58.0,
-                            height: 30.0,
-                            child: FlatButton(
-                              child: Text(
-                                '(',
-                                style: TextStyle(fontSize: 10.0),
-                              ),
-                              color: Colors.cyan,
-                              textColor: Colors.black,
-                              onPressed: () {},
-                            ),
-                          ),
-                          Container(
-                            margin: EdgeInsets.all(1),
-
-                          ),
-                          new SizedBox(
-                            width: 58.0,
-                            height: 30.0,
-                            child: FlatButton(
-                              child: Text(
-                                '1)',
-                                style: TextStyle(fontSize: 10.0),
-                              ),
-                              color: Colors.cyan,
-                              textColor: Colors.black,
-                              onPressed: () {},
-                            ),
-                          ),
-                          Container(
-                            margin: EdgeInsets.all(1),
-
-                          ),
-
-                        ],
+                        children: _listaBotonesFila2(),
                       ),
                       Row(
-                        children: [
-                          Container(
-                            margin: EdgeInsets.all(7),
-
-                          ),
-                          new SizedBox(
-                            width: 58.0,
-                            height: 30.0,
-                            child: FlatButton(
-                              child: Text(
-                                '1',
-                                style: TextStyle(fontSize: 10.0),
-                              ),
-                              color: Colors.cyan,
-                              textColor: Colors.black,
-                              onPressed: () {},
-                            ),
-                          ),
-                          Container(
-                            margin: EdgeInsets.all(1),
-
-                          ),
-                          new SizedBox(
-                            width: 58.0,
-                            height: 30.0,
-                            child: FlatButton(
-                              child: Text(
-                                '2',
-                                style: TextStyle(fontSize: 10.0),
-                              ),
-                              color: Colors.cyan,
-                              textColor: Colors.black,
-                              onPressed: () {},
-                            ),
-                          ),
-                          Container(
-                            margin: EdgeInsets.all(1),
-
-                          ),
-                          new SizedBox(
-                            width: 58.0,
-                            height: 30.0,
-                            child: FlatButton(
-                              child: Text(
-                                '3',
-                                style: TextStyle(fontSize: 10.0),
-                              ),
-                              color: Colors.cyan,
-                              textColor: Colors.black,
-                              onPressed: () {},
-                            ),
-                          ),
-                          Container(
-                            margin: EdgeInsets.all(1),
-
-                          ),
-                          new SizedBox(
-                            width: 58.0,
-                            height: 30.0,
-                            child: FlatButton(
-                              child: Text(
-                                '-',
-                                style: TextStyle(fontSize: 10.0),
-                              ),
-                              color: Colors.cyan,
-                              textColor: Colors.black,
-                              onPressed: () {},
-                            ),
-                          ),
-                          Container(
-                            margin: EdgeInsets.all(1),
-
-                          ),
-                          new SizedBox(
-                            width: 58.0,
-                            height: 30.0,
-                            child: FlatButton(
-                              child: Text(
-                                '1',
-                                style: TextStyle(fontSize: 10.0),
-                              ),
-                              color: Colors.cyan,
-                              textColor: Colors.black,
-                              onPressed: () {},
-                            ),
-                          ),
-                          Container(
-                            margin: EdgeInsets.all(1),
-
-                          ),
-                          new SizedBox(
-                            width: 58.0,
-                            height: 30.0,
-                            child: FlatButton(
-                              child: Text(
-                                '1',
-                                style: TextStyle(fontSize: 10.0),
-                              ),
-                              color: Colors.cyan,
-                              textColor: Colors.black,
-                              onPressed: () {},
-                            ),
-                          ),
-                          Container(
-                            margin: EdgeInsets.all(1),
-
-                          ),
-
-                        ],
+                        children: _listaBotonesFila3(),
                       ),
                       Row(
-                        children: [
-                          Container(
-                            margin: EdgeInsets.all(7),
-
-                          ),
-                          new SizedBox(
-                            width: 58.0,
-                            height: 30.0,
-                            child: FlatButton(
-                              child: Text(
-                                '0',
-                                style: TextStyle(fontSize: 10.0),
-                              ),
-                              color: Colors.cyan,
-                              textColor: Colors.black,
-                              onPressed: () {},
-                            ),
-                          ),
-                          Container(
-                            margin: EdgeInsets.all(1),
-
-                          ),
-                          new SizedBox(
-                            width: 58.0,
-                            height: 30.0,
-                            child: FlatButton(
-                              child: Text(
-                                '.',
-                                style: TextStyle(fontSize: 10.0),
-                              ),
-                              color: Colors.cyan,
-                              textColor: Colors.black,
-                              onPressed: () {},
-                            ),
-                          ),
-                          Container(
-                            margin: EdgeInsets.all(1),
-
-                          ),
-                          new SizedBox(
-                            width: 58.0,
-                            height: 30.0,
-                            child: FlatButton(
-                              child: Text(
-                                '%',
-                                style: TextStyle(fontSize: 10.0),
-                              ),
-                              color: Colors.cyan,
-                              textColor: Colors.black,
-                              onPressed: () {},
-                            ),
-                          ),
-                          Container(
-                            margin: EdgeInsets.all(1),
-
-                          ),
-                          new SizedBox(
-                            width: 58.0,
-                            height: 30.0,
-                            child: FlatButton(
-                              child: Text(
-                                '/',
-                                style: TextStyle(fontSize: 10.0),
-                              ),
-                              color: Colors.cyan,
-                              textColor: Colors.black,
-                              onPressed: () {},
-                            ),
-                          ),
-                          Container(
-                            margin: EdgeInsets.all(1),
-
-                          ),
-                          new SizedBox(
-                            width: 116.0,
-                            height: 30.0,
-                            child: FlatButton(
-                              child: Text(
-                                '=',
-                                style: TextStyle(fontSize: 10.0),
-                              ),
-                              color: Colors.green,
-                              textColor: Colors.black,
-                              onPressed: () {},
-                            ),
-                          ),
-                          Container(
-                            margin: EdgeInsets.all(1),
-
-                          ),
-
-
-                        ],
+                        children: _listaBotonesFila4(),
                       ),
 
                     ],
@@ -483,4 +68,79 @@ class _HomePageState extends State<HomePage> {
         )
     );
   }
+  Widget pintarBoton({String texto, dynamic metodo, int valorflex}){
+    return Expanded(
+        flex: valorflex,
+        child: Container(
+          child:
+
+          new SizedBox(
+            width: 58.0,
+            height: 30.0,
+            child: FlatButton(
+              child: Text(
+                texto,
+                style: TextStyle(fontSize: 10.0),
+              ),
+              color: Colors.cyan,
+              textColor: Colors.black,
+              onPressed: metodo,
+            ),
+          ),
+
+        )
+
+    );
+  }
+  _listaBotonesFila1(){
+    return[
+      pintarBoton(texto: "7", metodo: (){}),
+      pintarBoton(texto: "8", metodo: (){}),
+      pintarBoton(texto: "9", metodo: (){}),
+      pintarBoton(texto: "º", metodo: (){}),
+      pintarBoton(texto: "<=", metodo: (){}),
+      pintarBoton(texto: "C", metodo: (){}),
+
+
+    ];
+  }
+  _listaBotonesFila2(){
+    return[
+      pintarBoton(texto: "4", metodo: (){}),
+      pintarBoton(texto: "5", metodo: (){}),
+      pintarBoton(texto: "6", metodo: (){}),
+      pintarBoton(texto: ".", metodo: (){}),
+      pintarBoton(texto: "(", metodo: (){}),
+      pintarBoton(texto: ")", metodo: (){}),
+
+
+    ];
+  }
+
+  _listaBotonesFila3(){
+    return[
+      pintarBoton(texto: "1", metodo: (){}),
+      pintarBoton(texto: "2", metodo: (){}),
+      pintarBoton(texto: "3", metodo: (){}),
+      pintarBoton(texto: ".", metodo: (){}),
+      pintarBoton(texto: "[", metodo: (){}),
+      pintarBoton(texto: "]", metodo: (){}),
+
+
+
+    ];
+  }
+  _listaBotonesFila4(){
+    return[
+      pintarBoton(texto: "0", metodo: (){}),
+      pintarBoton(texto: ".", metodo: (){}),
+      pintarBoton(texto: "%", metodo: (){}),
+      pintarBoton(texto: "0", metodo: (){}),
+      pintarBoton(texto: "=", metodo: (){}),
+
+
+
+    ];
+  }
+
 }
