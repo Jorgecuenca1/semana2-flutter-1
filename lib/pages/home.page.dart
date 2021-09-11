@@ -68,7 +68,7 @@ class _HomePageState extends State<HomePage> {
         )
     );
   }
-  Widget pintarBoton({String texto, dynamic metodo, int valorflex}){
+  Widget pintarBoton({String texto, dynamic metodo, int valorflex, dynamic colorcustom}){
     return Expanded(
         flex: valorflex,
         child: Container(
@@ -82,7 +82,7 @@ class _HomePageState extends State<HomePage> {
                 texto,
                 style: TextStyle(fontSize: 10.0),
               ),
-              color: Colors.cyan,
+              color: colorcustom,
               textColor: Colors.black,
               onPressed: metodo,
             ),
@@ -94,24 +94,24 @@ class _HomePageState extends State<HomePage> {
   }
   _listaBotonesFila1(){
     return[
-      pintarBoton(texto: "7", metodo: (){}),
-      pintarBoton(texto: "8", metodo: (){}),
-      pintarBoton(texto: "9", metodo: (){}),
-      pintarBoton(texto: "º", metodo: (){}),
-      pintarBoton(texto: "<=", metodo: (){}),
-      pintarBoton(texto: "C", metodo: (){}),
+      pintarBoton(texto: "7", metodo: (){}, colorcustom: Colors.cyan),
+      pintarBoton(texto: "8", metodo: (){},colorcustom: Colors.cyan),
+      pintarBoton(texto: "9", metodo: (){},colorcustom: Colors.cyan),
+      pintarBoton(texto: "º", metodo: (){},colorcustom: Colors.cyan),
+      pintarBoton(texto: "<=", metodo: (){},colorcustom: Colors.cyan),
+      pintarBoton(texto: "C", metodo: (){},colorcustom: Colors.cyan),
 
 
     ];
   }
   _listaBotonesFila2(){
     return[
-      pintarBoton(texto: "4", metodo: (){}),
-      pintarBoton(texto: "5", metodo: (){}),
-      pintarBoton(texto: "6", metodo: (){}),
-      pintarBoton(texto: ".", metodo: (){}),
-      pintarBoton(texto: "(", metodo: (){}),
-      pintarBoton(texto: ")", metodo: (){}),
+      pintarBoton(texto: "4", metodo: (){},colorcustom: Colors.cyan),
+      pintarBoton(texto: "5", metodo: (){},colorcustom: Colors.cyan),
+      pintarBoton(texto: "6", metodo: (){},colorcustom: Colors.cyan),
+      pintarBoton(texto: ".", metodo: (){},colorcustom: Colors.cyan),
+      pintarBoton(texto: "(", metodo: (){},colorcustom: Colors.cyan),
+      pintarBoton(texto: ")", metodo: (){},colorcustom: Colors.cyan),
 
 
     ];
@@ -119,12 +119,12 @@ class _HomePageState extends State<HomePage> {
 
   _listaBotonesFila3(){
     return[
-      pintarBoton(texto: "1", metodo: (){}),
-      pintarBoton(texto: "2", metodo: (){}),
-      pintarBoton(texto: "3", metodo: (){}),
-      pintarBoton(texto: ".", metodo: (){}),
-      pintarBoton(texto: "[", metodo: (){}),
-      pintarBoton(texto: "]", metodo: (){}),
+      pintarBoton(texto: "1", metodo: (){},colorcustom: Colors.cyan),
+      pintarBoton(texto: "2", metodo: (){},colorcustom: Colors.cyan),
+      pintarBoton(texto: "3", metodo: (){},colorcustom: Colors.cyan),
+      pintarBoton(texto: ".", metodo: (){},colorcustom: Colors.cyan),
+      pintarBoton(texto: "[", metodo: (){},colorcustom: Colors.cyan),
+      pintarBoton(texto: "]", metodo: (){},colorcustom: Colors.cyan),
 
 
 
@@ -132,11 +132,11 @@ class _HomePageState extends State<HomePage> {
   }
   _listaBotonesFila4(){
     return[
-      pintarBoton(texto: "0", metodo: (){}),
-      pintarBoton(texto: ".", metodo: (){}),
-      pintarBoton(texto: "%", metodo: (){}),
-      pintarBoton(texto: "0", metodo: (){}),
-      pintarBoton(texto: "=", metodo: (){}),
+      pintarBoton(texto: "0", metodo: (){},colorcustom: Colors.cyan),
+      pintarBoton(texto: ".", metodo: (){},colorcustom: Colors.cyan),
+      pintarBoton(texto: "%", metodo: (){},colorcustom: Colors.cyan),
+      pintarBoton(texto: "0", metodo: (){},colorcustom: Colors.cyan),
+      pintarBoton(texto: "=", metodo: (){},colorcustom: Colors.cyan),
 
 
 
