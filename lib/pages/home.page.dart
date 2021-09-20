@@ -36,18 +36,23 @@ class _HomePageState extends State<HomePage> {
               child: new Text('Modo CIentifica'),
               value: 'two'
           ),
+          new DropdownMenuItem(
+              child: new Text('ModoNOse '),
+              value: 'three'
+          ),
         ],
         onChanged: (String value) {
           setState(() => _value = value);
         },),
+
         actions: <Widget>[
           IconButton(
             icon: new Icon(Icons.maximize),
-            onPressed: () => print('Minimiza calculadora'),
+            onPressed: () => print('CIerra calculadora'),
           ),
           IconButton(
             icon: new Icon(Icons.open_in_browser),
-            onPressed: () => print('Maximiza calculadora'),
+            onPressed: () => print('CIerra calculadora'),
           ),
           IconButton(
             icon: new Icon(Icons.close),
@@ -88,7 +93,7 @@ class _HomePageState extends State<HomePage> {
               flex: 1,
               child: Container(
                 child: SingleChildScrollView(
-                  child: TextFormField(
+                  child: TextField(
                     decoration: new InputDecoration.collapsed(
                         hintText: "",
                         hintStyle: TextStyle(
@@ -112,7 +117,7 @@ class _HomePageState extends State<HomePage> {
               flex: 1,
               child: Container(
                 child: SingleChildScrollView(
-                  child: TextFormField(
+                  child: TextField(
                     enabled: false,
                     decoration: new InputDecoration.collapsed(
                         hintText: "-",
@@ -171,13 +176,13 @@ class _HomePageState extends State<HomePage> {
         setState(() {
           try {
             ContextModel cm = new ContextModel();
-            Expression exp =
+            Expression solution =
             parseo.parse(entradatexto.text);
-            exp = exp.simplify();
-            String solucion = exp.evaluate(EvaluationType.REAL, cm).toString();
+            solution = solution.simplify();
+            String solucion = solution.evaluate(EvaluationType.REAL, cm).toString();
             if (solucion == "NaN") {throw ("NO HAY RAIZ PARA NUMEROS NEGATICOS");
             }
-            if (solucion == "Infinity") {throw IntegerDivisionByZeroException();
+            if (solucion == "Infinity") {throw ("1/0 no existe esa division");
             }
             resultado.text = solucion;
           } on RangeError catch (e) {calculadora.text = "Esta mal escrita la operación";
@@ -187,7 +192,7 @@ class _HomePageState extends State<HomePage> {
           if (error.contains("Verifique los parentesis")) {calculadora.text = "Verifique los parentesis";
           } else if (error.contains("No hay")) {calculadora.text = "Debe ingresar un valor para completar la expresión";
           } else {
-            calculadora.text = "\n$e";
+            calculadora.text = "$e";
           }
           }
         });
