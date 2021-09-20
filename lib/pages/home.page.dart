@@ -186,7 +186,6 @@ class _HomePageState extends State<HomePage> {
             }
             resultado.text = solucion;
           } on RangeError catch (e) {calculadora.text = "Esta mal escrita la operación";
-          } on IntegerDivisionByZeroException catch (e) {calculadora.text = "NO existe division por cero no permitido";
           } on Exception catch (e) {calculadora.text = "No utilice numeros negaticos para la raiz cuadrada";
           } catch (e) {String error = e.toString();
           if (error.contains("Verifique los parentesis")) {calculadora.text = "Verifique los parentesis";
